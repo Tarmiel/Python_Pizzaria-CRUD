@@ -1,2 +1,19 @@
-# Python_Pizzaria-CRUD
-Sistema de Pizzaria
+# Dev - Repositório do Tarmiel(Lucas)
+<h4> Sistema de Pizzaria desenvolvido(e incrementado por mim) ao longo do curso "<a href="https://www.udemy.com/course/python-do-basico-ao-avancado-inteligencia-artificial/"> Python do básico ao avançado + inteligência artificial - Udemy</a>"
+  
+  <hr>
+  <h2>Funções do Sistema:</h2>
+  <ul>
+    <li>Logar e Cadastrar Usuários </li>
+    <li>Cadastrar Produtos</li>
+    <li>Listar Produtos</li>
+    <li>Excluir Produtos</li>
+    <li>Anotar Pedidos</li>
+    <li>Listar Pedidos/Encerrar Pedidos</li>
+    <li>Listar Usuários</li>
+    <li>Gerar Estatística</li>
+   </ul>
+
+
+<hr>
+<h6>Em desenvolvimento...</h1>
