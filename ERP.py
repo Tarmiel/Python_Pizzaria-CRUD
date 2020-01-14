@@ -12,7 +12,7 @@ conexao = pymysql.connect(
     charset='utf8mb4',
     cursorclass=pymysql.cursors.DictCursor
 )
-
+#login master = admin,admin
 autentico = False
 def logarCadastrar():
     usuarioExiste = 0
