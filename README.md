@@ -22,3 +22,4 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
 
 <hr>
 <h6>Em desenvolvimento...</h1>
+<img width="1000" height="450" alt="portfolio_view" src="https://i.ytimg.com/vi/LmywZ3P28c0/maxresdefault.jpg">
