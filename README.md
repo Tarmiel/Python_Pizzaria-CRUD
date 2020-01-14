@@ -12,10 +12,11 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
     <li>Anotar Pedidos</li>
     <li>Listar Pedidos/Encerrar Pedidos</li>
     <li>Listar Usuários</li>
-    <li>Gerar Estatística</li>
-   <pre>
-         Nome, Grupo, Vendedor(Dinheiro ou QTD)
-   </pre>
+      <li>Gerar Estatística
+        <pre>
+            Nome, Grupo, Vendedor(Dinheiro ou QTD)
+        </pre>
+      </li>
    </ul>
 
 
