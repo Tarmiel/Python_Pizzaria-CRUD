@@ -1,5 +1,6 @@
 # Dev - Repositório do Tarmiel(Lucas)
-<h4> Sistema de Pizzaria desenvolvido(e incrementado por mim) ao longo do curso "<a href="https://www.udemy.com/course/python-do-basico-ao-avancado-inteligencia-artificial/"> Python do básico ao avançado + inteligência artificial - Udemy</a>"
+<h4> Sistema de Pizzaria desenvolvido(e incrementado por mim) ao longo do modulo "Interação a banco de dados
+com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao-avancado-inteligencia-artificial/">Python do básico ao avançado + inteligência artificial - Udemy</a>"</h4>
   
   <hr>
   <h2>Funções do Sistema:</h2>
