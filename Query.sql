@@ -29,9 +29,9 @@
     vendedor varchar(30) not null
      
     );
-	insert into produtos(nome,ingredientes,grupo,preco) values ('coca','','bebidas',6);
-	insert into produtos(nome,ingredientes,grupo,preco) values ('pizza de mussarela','mussarela','pizzas',34.9);
-	insert into produtos(nome,ingredientes,grupo,preco) values ('pizza de portuguesa','mussarela','pizzas',34.9);
+    insert into produtos(nome,ingredientes,grupo,preco) values ('coca','','bebidas',6);
+    insert into produtos(nome,ingredientes,grupo,preco) values ('pizza de mussarela','mussarela','pizzas',34.9);
+    insert into produtos(nome,ingredientes,grupo,preco) values ('pizza de portuguesa','mussarela','pizzas',34.9);
     insert into pedidos (nome, ingredientes, grupo, localEntrega, observacoes,dataPedido,vendedor) values ('pizza de mussarela', 'mussarela', 'pizzas', '', 'sem cebola','01-2020','admin');
     insert into pedidos (nome, ingredientes, grupo, localEntrega, observacoes,dataPedido,vendedor) values ('coca', '', 'bebidas', '', '','01-2020','admin');
 
