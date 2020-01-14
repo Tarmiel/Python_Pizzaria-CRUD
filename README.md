@@ -12,7 +12,15 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
     <li>Anotar Pedidos</li>
     <li>Listar Pedidos/Encerrar Pedidos</li>
     <li>Listar Usuários</li>
-    <li>Gerar Estatística</li>
+    <li>Gerar Estatística
+      <ul>
+        <li>por nome,grupo ou vendedores</li>
+          <ul>
+            <li>por dinheiro</li>
+            <li>por qtd</li>
+          </ul>
+      </u>
+    </li>
    </ul>
 
 
