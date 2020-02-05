@@ -18,9 +18,9 @@ def logarCadastrar():
     usuarioExiste = 0
     autenticado = False
     usuarioMaster = False
-    
+
     global vendedor
-    
+
     if decisao =='1':
         nome = input("Usuario: ")
         senha = input("Senha: ")
@@ -61,7 +61,7 @@ def logarCadastrar():
                 print("Erro ao cadastrar no banco de dados. Tente Novamente")
                 time.sleep(3)
                 os.system('clear')
-    
+
     return autenticado,usuarioMaster
 def cadastrarProduto():
     nome = input("Nome do produto: ")
@@ -78,6 +78,7 @@ def cadastrarProduto():
             os.system('clear')
     except:
         print("Erro ao cadastrar no banco de dados. Tente Novamente")
+
         time.sleep(3)
         os.system('clear')
 def listarProdutos():
@@ -121,7 +122,7 @@ def anotarPedidos():
     except:
         print("Erro ao conectar-se ao banco de dados.")
 
-    
+
     os.system('clear')
     for i in listaProdutos:
         listaDosProdutos.append(i)
@@ -170,7 +171,7 @@ def listarPedidos():
 
         decisao = int(input("1 - Encerrar Pedido , 2 - Voltar ao inicio ->>"))
         if decisao == 1:
-            iddeletar = int(input("Digite o ID do pedido para encerrar: "))  
+            iddeletar = int(input("Digite o ID do pedido para encerrar: "))
 
 
             #armazena o nome do produto
@@ -183,7 +184,7 @@ def listarPedidos():
                 print("Erro ao conectar-se ao banco de dados.")
             armazenaNome = armazena[0]['nome']
             armazenaGrupo = armazena[0]['grupo']
-        
+
             #pega o preço do produto
             try:
                 with conexao.cursor() as cursor:
@@ -193,7 +194,7 @@ def listarPedidos():
             except:
                 print("Erro ao conectar-se ao banco de dados/precos.")
             armazenaPrec = precoAlimento[0]['preco']
-            
+
             #insere na tabela estatistica
             try:
                 with conexao.cursor() as cursor:
@@ -227,7 +228,7 @@ def listarVendedores():
         os.system('clear')
         for i in perfisCadastrados:
             perfis.append(i)
-        if len(perfis) >=2:    
+        if len(perfis) >=2:
             for i in range(1,len(perfis)):
                 print(perfis[i])
             deletaPerfil = int(input("1 - Remover Perfil,2 - Voltar ao inicio : "))
@@ -274,7 +275,7 @@ def gerarEstatistica():
                 nomeProdutos.append(i['nome'])
 
             valores = []
-            valores.clear()   
+            valores.clear()
 
             for h in range(0,len(nomeProdutos)):
                 somaValor = -1
@@ -318,7 +319,7 @@ def gerarEstatistica():
                 for i in vendidosGrupo:
                     if grupoUnico[h] == i['nome']:
                         qntUnitaria +=1
-                qntFinal.append(qntUnitaria)    
+                qntFinal.append(qntUnitaria)
 
             plt.plot(grupoUnico,qntFinal)
             plt.ylabel('Quantidade Unitaria')
@@ -331,7 +332,7 @@ def gerarEstatistica():
                 nomeProdutos.append(i['grupo'])
 
             valores = []
-            valores.clear()   
+            valores.clear()
 
             for h in range(0,len(nomeProdutos)):
                 somaValor = -1
@@ -375,18 +376,18 @@ def gerarEstatistica():
                 for i in vendidosGrupo:
                     if grupoUnico[h] == i['grupo']:
                         qntUnitaria +=1
-                qntFinal.append(qntUnitaria)    
+                qntFinal.append(qntUnitaria)
 
             plt.plot(grupoUnico,qntFinal)
             plt.ylabel('Quantidade Unitaria')
             plt.xlabel('Produtos')
             plt.show()
-    elif estado == 3:            
+    elif estado == 3:
         for i in vendido:
             nomeVendedor.append(i['vendedor'])
 
             valores = []
-            valores.clear()   
+            valores.clear()
 
             for h in range(0,len(nomeVendedor)):
                 somaValor = -1
@@ -397,7 +398,6 @@ def gerarEstatistica():
                     valores.append(0)
                 elif somaValor > 0:
                     valores.append(somaValor+1)
-
         plt.plot(nomeVendedor,valores)
         plt.ylabel('Quantidade Vendida em reais por vendedor')
         plt.xlabel('Vendedores')
@@ -412,7 +412,6 @@ while not autentico:
         else:
             continue
     try:
-        with conexao.cursor() as cursor:
             cursor.execute('select * from cadastros')
             resultado = cursor.fetchall()
     except:
@@ -454,4 +453,3 @@ if autentico:
                 anotarPedidos()
             elif decisaoUsuario == 4:
                 listarPedidos()
-        
