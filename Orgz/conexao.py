@@ -1,7 +1,8 @@
 import pymysql.cursors
 
+
 def getConnection():
-    #conexão com o banco de dados
+    # conexão com o banco de dados
     conexao = pymysql.connect(
         host='localhost',
         user='root',
@@ -9,6 +10,5 @@ def getConnection():
         db='erp',
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
-
     )
     return conexao

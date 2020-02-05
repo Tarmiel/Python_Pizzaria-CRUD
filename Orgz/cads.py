@@ -1,5 +1,5 @@
 import os
-from conexao import getConnection
+import conexao
 #importando a conexao com o banco de dados e atribuindo
 connection = conexao.getConnection()
 cursor = connection.cursor()
@@ -41,8 +41,8 @@ def logarCadastrar():
             os.system('clear')
         elif usuarioExiste == 0:
             try:
-                    cursor.execute('insert into cadastros (nome, senha, nivel) values(%s, %s, %s)', (nome,senha, 1))
-                    conexao.commit()
+                cursor.execute('insert into cadastros (nome, senha, nivel) values(%s, %s, %s)', (nome,senha, 1))
+                conexao.commit()
                 print("Usuario cadastrado com sucesso.")
                 time.sleep(3)
                 os.system('clear')

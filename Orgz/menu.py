@@ -1,11 +1,12 @@
-import defs
+import cads
 import conexao
 import os
+
 
 def menuApp():
     while not autentico:
         while True:
-            i = ['1','2']
+            i = ['1', '2']
             decisao = input("1 - Logar , 2 - Cadastrar ->>  ")
             if decisao in i:
                 os.system('clear')
@@ -18,7 +19,7 @@ def menuApp():
         except:
             print("Erro ao conectar-se ao banco de dados.")
 
-        autentico,usuarioSupremo = logarCadastrar()
+        autentico, usuarioSupremo = logarCadastrar()
 
     if autentico:
         print("Logado com sucesso.")
@@ -26,12 +27,14 @@ def menuApp():
             decisaoUsuario = 1
 
             while decisaoUsuario != 0:
-                decisaoUsuario = int(input(" 0 - Sair, 1 - Cadastro, 2 - Listar Produtos, 3 - Anotar Pedido, 4 - Conferir Pedidos, 5 - Contas de Acesso, 6 - Gerar Estatisticas  ->> "))
+                decisaoUsuario = int(input(
+                    " 0 - Sair, 1 - Cadastro, 2 - Listar Produtos, 3 - Anotar Pedido, 4 - Conferir Pedidos, 5 - Contas de Acesso, 6 - Gerar Estatisticas  ->> "))
                 if decisaoUsuario == 1:
                     cadastrarProduto()
                 elif decisaoUsuario == 2:
                     listarProdutos()
-                    decisaoDeleta = int(input(" 1 - Deletar Produto, 2 - Voltar ao Inicio ->> "))
+                    decisaoDeleta = int(
+                        input(" 1 - Deletar Produto, 2 - Voltar ao Inicio ->> "))
                     if decisaoDeleta == 1:
                         excluirProdutos()
                         os.system('clear')
@@ -46,7 +49,8 @@ def menuApp():
         else:
             decisaoUsuario = 1
             while decisaoUsuario != 0:
-                decisaoUsuario = int(input(" 0 - Sair, 1 - Cadastro, 2 - Listar Produtos, 3 - Anotar Pedido, 4 - Conferir Pedidos ->> "))
+                decisaoUsuario = int(input(
+                    " 0 - Sair, 1 - Cadastro, 2 - Listar Produtos, 3 - Anotar Pedido, 4 - Conferir Pedidos ->> "))
                 if decisaoUsuario == 1:
                     cadastrarProduto()
                 elif decisaoUsuario == 2:
