@@ -1,5 +1,5 @@
 import os
-import conexao
+import connectionDB
 #importando a conexao com o banco de dados e atribuindo
 connection = conexao.getConnection()
 cursor = connection.cursor()
