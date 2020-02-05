@@ -1,9 +1,10 @@
-import cads
-import conexao
+from ERP import *
+from connectionDB import *
 import os
 
 
 def menuApp():
+    autentico = False
     while not autentico:
         while True:
             i = ['1', '2']
@@ -19,7 +20,7 @@ def menuApp():
         except:
             print("Erro ao conectar-se ao banco de dados.")
 
-        autentico, usuarioSupremo = logarCadastrar()
+        autentico, usuarioSupremo = ERP.logarCadastrar()
 
     if autentico:
         print("Logado com sucesso.")
