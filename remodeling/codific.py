@@ -1,6 +1,7 @@
 import os
 import connectionDB
 from connectionDB import getConnection
+import menu
 
 #importando a conexao com o banco de dados e atribuindo
 connection = connectionDB.getConnection()

@@ -1,5 +1,5 @@
-from ERP import *
-from connectionDB import *
+import codific
+import connectionDB
 import os
 
 
@@ -20,7 +20,7 @@ def menuApp():
         except:
             print("Erro ao conectar-se ao banco de dados.")
 
-        autentico, usuarioSupremo = ERP.logarCadastrar()
+        autentico, usuarioSupremo = codific.logarCadastrar()
 
     if autentico:
         print("Logado com sucesso.")
@@ -31,7 +31,7 @@ def menuApp():
                 decisaoUsuario = int(input(
                     " 0 - Sair, 1 - Cadastro, 2 - Listar Produtos, 3 - Anotar Pedido, 4 - Conferir Pedidos, 5 - Contas de Acesso, 6 - Gerar Estatisticas  ->> "))
                 if decisaoUsuario == 1:
-                    cadastrarProduto()
+                    codific.cadastrarProduto()
                 elif decisaoUsuario == 2:
                     listarProdutos()
                     decisaoDeleta = int(
