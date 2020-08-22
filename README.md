@@ -14,9 +14,9 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
     <li>Listar Pedidos/Encerrar Pedidos</li>
     <li>Listar Usuários</li>
       <li>Gerar Estatística
-        <li>
+        <ul>
           - Nome, Grupo, Vendedor(Dinheiro ou QTD)
-        </li>
+        </ul>
       </li>
    </ul>
 </h5>
