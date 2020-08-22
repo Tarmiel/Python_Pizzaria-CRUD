@@ -1,9 +1,10 @@
-# Dev - Repositório do Tarmiel(Lucas)
-<h4> Sistema de Pizzaria desenvolvido(e incrementado por mim) ao longo do módulo "Interação a banco de dados
+<h1 align="center"> Sistema de Pizzaria </h1>
+
+<h4>Sistema de Pizzaria desenvolvido(e incrementado por mim) ao longo do módulo "Interação a banco de dados
 com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao-avancado-inteligencia-artificial/">Python do básico ao avançado + inteligência artificial - Udemy</a>"</h4>
   
-  <hr>
-  <h2>Funções do Sistema:</h2>
+
+<h5>Funções do Sistema:
   <ul>
     <li>Logar e Cadastrar Usuários </li>
     <li>Cadastrar Produtos</li>
@@ -18,7 +19,7 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
         </pre>
       </li>
    </ul>
-
+</h5>
 
 <hr>
 <h6>Em desenvolvimento...</h1>
