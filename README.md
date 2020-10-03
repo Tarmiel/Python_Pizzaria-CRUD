@@ -5,20 +5,17 @@ com PyMySql" do curso "<a href="https://www.udemy.com/course/python-do-basico-ao
   
 
 <h5>Funções do Sistema:
-  <ul>
-    <li>Logar e Cadastrar Usuários </li>
-    <li>Cadastrar Produtos</li>
-    <li>Listar Produtos</li>
-    <li>Excluir Produtos</li>
-    <li>Anotar Pedidos</li>
-    <li>Listar Pedidos/Encerrar Pedidos</li>
-    <li>Listar Usuários</li>
-      <li>Gerar Estatística
-        <ul>
-          - Nome, Grupo, Vendedor(Dinheiro ou QTD)
-        </ul>
-      </li>
-   </ul>
+  
+      Logar e Cadastrar Usuários
+      Cadastrar Produtos
+      Listar Produtos
+      Excluir Produtos
+      Anotar Pedidos
+      Listar Pedidos/Encerrar Pedidos
+      Listar Usuários
+      Gerar Estatística
+        - Nome, Grupo, Vendedor(Dinheiro ou QTD)
+
 </h5>
 
 <img width="1000" height="450" alt="portfolio_view" src="https://i.ytimg.com/vi/LmywZ3P28c0/maxresdefault.jpg">
